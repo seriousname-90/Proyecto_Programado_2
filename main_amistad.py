@@ -8,7 +8,7 @@ def mensajes(num,agente):
         print('Amistad'.center(80,'-'))
         """Titulo del texto"""
 
-    if num == 1:
+    elif num == 1:
         print(f"""
             __________________________________________________
            |                                                  |
@@ -38,36 +38,37 @@ def mensajes(num,agente):
  _-'.-.-.-.-.-. .---.-. .-------------------------. .-.---. .---.-.-.-.`-_
 :-------------------------------------------------------------------------:
 `---._.-------------------------------------------------------------._.---""")
+        print()
 
-    if num == 2:
+    elif num == 2:
         print("""        
-            | Agente D: INCROYABLE! Veo que has aceptado, así que esto esta es tu misión: 
-            | Necesitamos de tu ayuda para recolectar informacion de una sociedad distopica
-            | llamada solarpunk. Para esto cuentas con un portal que te deberías de tener atras tuyo, ESPERA!!, 
-            | Para activarlo deberás indicarme cuantas zonas puedes cubrir hoy
-            |
-            |                             ███▓▒░░ IMPORTANTE ░░▒▓███ 
-                ╔═══════════════════════════════════════════════════════════════════════════════╗ 
-                ║ Utiliza SOLAMENTE numeros enteros positivos para indicar la cantidad de zonas ║ 
-                ╚═══════════════════════════════════════════════════════════════════════════════╝ 
+| Agente D: INCROYABLE! Veo que has aceptado, así que esto esta es tu misión: 
+| Necesitamos de tu ayuda para recolectar informacion de una sociedad distopica
+| llamada solarpunk. Para esto cuentas con un portal que te deberías de tener atras tuyo, ESPERA!!, 
+| Para activarlo deberás indicarme cuantas zonas puedes cubrir hoy
+|
+|                             ███▓▒░░ IMPORTANTE ░░▒▓███ 
+    ╔═══════════════════════════════════════════════════════════════════════════════╗ 
+    ║ Utiliza SOLAMENTE numeros enteros positivos para indicar la cantidad de zonas ║ 
+    ╚═══════════════════════════════════════════════════════════════════════════════╝ 
             """)
         print()
 
-    if num == 2.5:
+    elif num == 2.5:
         print("""        
-            | Agente D: Ahora!, tenemos un limite de capacidad con los habitantes que podrás interactuar. 
-            | Por ser la primera vez te dejaremos escojer la cantidad que creas conveniente y nosotros nos encargamos
-            | del rendimiento, no te preocupes, ahora solo dinos, 
-            | ¿Cuál va ser esa cantidad?
-            |
-            |                                ███▓▒░░ IMPORTANTE ░░▒▓███  
-                ╔════════════════════════════════════════════════════════════════════════════════════╗ 
-                ║ Utiliza SOLAMENTE numeros enteros positivos para indicar la cantidad de habitantes ║ 
-                ╚════════════════════════════════════════════════════════════════════════════════════╝ 
+| Agente D: Ahora!, tenemos un limite de capacidad con los habitantes que podrás interactuar. 
+| Por ser la primera vez te dejaremos escojer la cantidad que creas conveniente y nosotros nos encargamos
+| del rendimiento, no te preocupes, ahora solo dinos, 
+| ¿Cuál va ser esa cantidad?
+|
+|                                ███▓▒░░ IMPORTANTE ░░▒▓███  
+    ╔════════════════════════════════════════════════════════════════════════════════════╗ 
+    ║ Utiliza SOLAMENTE numeros enteros positivos para indicar la cantidad de habitantes ║ 
+    ╚════════════════════════════════════════════════════════════════════════════════════╝ 
             """)
         print()
 
-    if num == 3:
+    elif num == 3:
         print("""_____________________________________________________________")
 
 *ERROR*: Has ingresado algo que no es un numero o un entero por favor
@@ -77,23 +78,23 @@ _____________________________________________________________""")
     
     elif num == 5:
          print (f"""
-    | Agente D: Ya está listo!, la cantidad de zonas que elegiste ya se encuentran generadas, bien hecho!.
-    | Espera...WOPS!, hubo un fallo en el sistema y los habitantes se han repartido entre todas las zonas.
-    | La única manera de saber donde quedaron es buscándolos zona por zona.  
-    | Ahora se muestran los nombres de las zonas, empezemos, ¿Cuál zona quieres visitar de primero?
-    |  
-    | 
-    |                              ███▓▒░░ IMPORTANTE ░░▒▓███  
-        ╔══════════════════════════════════════════════════════════════════════════════════╗ 
-        ║ Escribe el NOMBRE de la zona que deseas visitar TAL CUAL se muestra en la lista  ║ 
-        ╚══════════════════════════════════════════════════════════════════════════════════╝ 
+| Agente D: Ya está listo!, la cantidad de zonas que elegiste ya se encuentran generadas, bien hecho!.
+| Espera...WOPS!, hubo un fallo en el sistema y los habitantes se han repartido entre todas las zonas.
+| La única manera de saber donde quedaron es buscándolos zona por zona.  
+| Ahora se muestran los nombres de las zonas, empezemos, ¿Cuál zona quieres visitar de primero?
+|  
+| 
+|                              ███▓▒░░ IMPORTANTE ░░▒▓███  
+    ╔══════════════════════════════════════════════════════════════════════════════════╗ 
+    ║ Escribe el NOMBRE de la zona que deseas visitar TAL CUAL se muestra en la lista  ║ 
+    ╚══════════════════════════════════════════════════════════════════════════════════╝ 
             """)
 
     elif num == 6:
         print (f"""
-    | Agente D: Ahora escucha, como parte de tu misión tienes varias opciones:
-    | 1. Puedes interactuar con cualquiera de ellos digitando su nombre tal y como se muestra  
-    | 2. Puedes digitar "Irse" para volver al menú de listas
+| Agente D: Ahora escucha, como parte de tu misión tienes varias opciones:
+| 1. Puedes interactuar con cualquiera de ellos digitando su nombre tal y como se muestra  
+| 2. Puedes digitar "Irse" para volver al menú de listas
 
 """)
     
@@ -103,11 +104,12 @@ _____________________________________________________________""")
 *ERROR*: Agente no has ingresado un texto el cual este dentro de la lista de
 zonas correspondiente por favor selecciona alguno de los elementos dados
 _____________________________________________________________""")
+        print()
     
     elif num == 8:
         print()
         print (f"""
-    | Agente D: Vaya!, hemos llegado muy rápido, bienvenido a *redoble de tambores*: """)
+| Agente D: Vaya!, hemos llegado muy rápido, bienvenido a *redoble de tambores*: """)
         print()
     
     elif num == 9:
@@ -121,6 +123,7 @@ basicas de si.""")
 *ERROR*: Agente no has ingresado un texto el cual este dentro de la lista de
 habitantes correspondiente por favor selecciona alguno de los elementos dados
 ________________________________________________________________________""")
+        print()
         
     elif num== 11:
         print(f"""
@@ -383,7 +386,8 @@ ________________________________________________________________________""")
     *****########********************+++++++******###**************########******########***********######*****=--------------==--+##=-    
     ***##########********************++++++++***#####**************######################***********##########*=-------+**=-------+##=-    
     """)
-    if num == 548:
+        
+    elif num == 548:
         print ("""
 
 ░░░░░░░░░░░░░░░░░░  ░█████╗░███╗░░░███╗██╗░██████╗████████╗░█████╗░██████╗░  ░░░░░░░░░░░░░░░░░░
@@ -393,6 +397,10 @@ ________________________________________________________________________""")
 ░░░░░░░░░░░░░░░░░░  ██║░░██║██║░╚═╝░██║██║██████╔╝░░░██║░░░██║░░██║██████╔╝  ░░░░░░░░░░░░░░░░░░
 ░░░░░░░░░░░░░░░░░░  ╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░  ░░░░░░░░░░░░░░░░░░
 """)
+    
+    elif num == 22:
+        print(f"""ZONAS {agente}:""".center(80,"-"))
+
     """de aqui para rriba son print usados para varias partes de la simulacion"""
 
 
@@ -783,15 +791,15 @@ def nombres_zonas():
 def desplegar_preguntas():
     print (f"""   | Agende D: Aquí hay una lista de preguntas que su respuesta tendrán coherencia: 
     ╔══════════════════════════════════════════════════════════════════════════════╗                
-    ║   "como estas?"   ║ "que hora es?" ║ "que edad tienes?"║ "en donde estamos?" ║
-    ║ "como te llamas?" ║    "cual es tu color favorito?"    ║   "donde naciste?"  ║ 
-    ║   "cual es tu fecha de nacimiento?"   ║   "quien es tu cantante favorito?"   ║
-    ║   "que tipo de musica escuchas?"   ║   "quien es tu programador favorito?"   ║
-    ║    "te gustan los capibaras?"      ║      "Eres mas de playa o montaña?"     ║
-    ║"si tubieras un capibara que nombre le pondrias?"║"cual es tu fruta favorita?"║
-    ║ "cual es tu materia favortia de colegio?"  ║  "te gustan los croissants?"    ║
-    ║ "cual es tu genero de peliculas favorito?" ║    "dame un consejo de via"     ║
-    ║         dime algo filosofico"      ║          "ya no se que preguntarte"     ║
+    ║    como estas?    ║  que hora es?  ║  que edad tienes? ║  en donde estamos?  ║
+    ║  como te llamas?  ║     cual es tu color favorito?     ║    donde naciste?   ║ 
+    ║    cual es tu fecha de nacimiento?    ║    quien es tu cantante favorito?    ║
+    ║    que tipo de musica escuchas?    ║    quien es tu programador favorito?    ║
+    ║     te gustan los capibaras?       ║       Eres mas de playa o montaña?      ║
+    ║ si tubieras un capibara que nombre le pondrias? ║ cual es tu fruta favorita? ║
+    ║  cual es tu materia favortia de colegio?   ║   te gustan los croissants?     ║
+    ║  cual es tu genero de peliculas favorito?  ║     dame un consejo de via      ║
+    ║         dime algo filosofico       ║           ya no se que preguntarte      ║
     ╚══════════════════════════════════════════════════════════════════════════════╝
     ║           ESCRIBE LA PREGUNTA TAL Y COMO SE MUESTRA EN PANTALLA              ║
     ╚══════════════════════════════════════════════════════════════════════════════╝
@@ -886,7 +894,7 @@ def elegir_habitantes(habitantes,seleccionados,indice,cantidad_aleatoria):
 def easter_egg():
     """funcion que hace una probabilidad del 1 al 100 para ver si aparece un capibara"""
 
-    ran = random.randint(1,8)
+    ran = random.randint(1,10)
     """random que se usa para la probabilidad"""
 
     if ran == 4:
@@ -907,6 +915,7 @@ def preguntar_seleccion(valor,var,largo,ind,zona):
     """define las keys de el diccionario valor como una variable"""
 
     if  list(zonas) == var:
+        mensajes(22,agente)
         impre_zonas(var,len(var),0)
         mensajes(5,agente)
         seleccion = input()
@@ -915,6 +924,7 @@ def preguntar_seleccion(valor,var,largo,ind,zona):
         pasando a entrar_zonas para buscar si existe dentro de la lista de zonas"""
     
     else:
+        entrar_zona(zona)
         impre_personas(var,len(var),0)
         mensajes(6,agente)
         seleccion = input()
@@ -932,7 +942,9 @@ def entrar_zonas(valor,var,largo,ind,seleccion,zona,zonas):
         el input"""
 
     elif seleccion == var[ind]:
-        entrar_zona(seleccion)
+        mensajes(18,agente)
+        mensajes(17,agente)
+        mensajes(8,agente)
         return preguntar_seleccion(valor,valor[seleccion],len(valor[seleccion]),0,seleccion)
         """si la posicion ind coincide con el input significa que si existe dentro de la lista por lo que vuelve a preguntar seleccion pero cambiando la lista
         de zonas por lista de habitantes (se agarra del diccionario) y se guarda la zona seleccionada para otras funciones futuras"""
@@ -970,9 +982,6 @@ def interaccion(valor,var,largo,ind,seleccion,zona,zonas):
 def entrar_zona(zona): 
     """Función que imprime la Zona que estamos visitando"""
 
-    mensajes(18,agente)
-    mensajes(17,agente)
-    mensajes(8,agente)
     print (f"""{zona}""".center(80,"-"))
     """dos prints de la funcion mensajes para contexto y la zona escrita de forma ordenada"""
         
@@ -1086,8 +1095,8 @@ def bienvenida(entrada):
 
         mensajes(1,agente)
 
-    irse= (input("""     - ¿ACEPTAS LA MISIÓN?: - 
-    |   (S) SI   |   (N) NO   |
+    irse= (input("""                       - ¿ACEPTAS LA MISIÓN?: - 
+                       |   (S) SI   |   (N) NO   |
 """))
     """mensajes de bienvenida y contextualizacion mas un input del inicio para ver si aceptas la "mision" """
 
