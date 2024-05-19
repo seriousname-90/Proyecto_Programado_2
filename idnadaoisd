@@ -1,0 +1,251 @@
+[1mdiff --git a/main_amistad.py b/main_amistad.py[m
+[1mindex 094da26..f070d11 100644[m
+[1m--- a/main_amistad.py[m
+[1m+++ b/main_amistad.py[m
+[36m@@ -41,10 +41,10 @@[m [mdef mensajes(num,agente):[m
+ [m
+     if num == 2:[m
+         print("""        [m
+[31m-        | Agente D: INCROYABLE! Veo que has aceptado, así que esto esta es tu misión: [m
+[32m+[m[32m            | Agente D: INCROYABLE! Veo que has aceptado, así que esto esta es tu misión:[m[41m [m
+             | Necesitamos de tu ayuda para recolectar informacion de una sociedad distopica[m
+             | llamada solarpunk. Para esto cuentas con un portal que te deberías de tener atras tuyo, ESPERA!!, [m
+[31m-            | Para activarlo deberás indicarme cuantas zonas puedes cubrir hoy? [m
+[32m+[m[32m            | Para activarlo deberás indicarme cuantas zonas puedes cubrir hoy[m
+             |[m
+             |                             ███▓▒░░ IMPORTANTE ░░▒▓███ [m
+                 ╔═══════════════════════════════════════════════════════════════════════════════╗ [m
+[36m@@ -55,9 +55,12 @@[m [mdef mensajes(num,agente):[m
+ [m
+     if num == 2.5:[m
+         print("""        [m
+[31m-        | Agente D: "Ahora mensaje que pida los habitantes" ? [m
+[32m+[m[32m            | Agente D: Ahora!, tenemos un limite de capacidad con los habitantes que podrás interactuar.[m[41m [m
+[32m+[m[32m            | Por ser la primera vez te dejaremos escojer la cantidad que creas conveniente y nosotros nos encargamos[m
+[32m+[m[32m            | del rendimiento, no te preocupes, ahora solo dinos,[m[41m [m
+[32m+[m[32m            | ¿Cuál va ser esa cantidad?[m
+             |[m
+[31m-            |                                 ███▓▒░░ IMPORTANTE ░░▒▓███ [m
+[32m+[m[32m            |                                ███▓▒░░ IMPORTANTE ░░▒▓███[m[41m  [m
+                 ╔════════════════════════════════════════════════════════════════════════════════════╗ [m
+                 ║ Utiliza SOLAMENTE numeros enteros positivos para indicar la cantidad de habitantes ║ [m
+                 ╚════════════════════════════════════════════════════════════════════════════════════╝ [m
+[36m@@ -72,24 +75,24 @@[m [mingresa un numero valido[m
+ _____________________________________________________________""")[m
+         print()[m
+     [m
+[31m-    elif num == 4:[m
+[31m-        print(f"""[m
+[31m-[m
+[31m-Segundo, podrás solicitar por la cantidad de individuos que habiten las zonas:[m
+[31m-        [m
+[31m-Ingresa la cantidad individuos que deseas generar""")[m
+[31m-    [m
+     elif num == 5:[m
+[31m-        print (f"""[m
+[31m-Agente D: MMM creo que ya esta, segun la cantidad que elegiste aqui estan las zonas que te asignamos,[m
+[31m-ya que todo esta listo, empezemos, cual zona quieres visitar de primero? (escribe el nombre tal cual[m
+[31m-como aparece en la lista)""")[m
+[31m-        [m
+[32m+[m[32m         print (f"""[m
+[32m+[m[32m    | Agente D: Ya está listo!, la cantidad de zonas que elegiste ya se encuentran generadas, bien hecho!.[m[41m [m
+[32m+[m[32m    | Ahora se muestran los nombres de las zonas, empezemos, ¿Cuál zona quieres visitar de primero?[m
+[32m+[m[32m    |[m[41m  [m
+[32m+[m[32m    |[m[41m [m
+[32m+[m[32m    |                              ███▓▒░░ IMPORTANTE ░░▒▓███[m[41m  [m
+[32m+[m[32m        ╔══════════════════════════════════════════════════════════════════════════════════╗[m[41m [m
+[32m+[m[32m        ║ Escribe el NOMBRE de la zona que deseas visitar TAL CUAL se muestra en la lista  ║[m[41m [m
+[32m+[m[32m        ╚══════════════════════════════════════════════════════════════════════════════════╝[m[41m [m
+[32m+[m[32m            """)[m
+[32m+[m
+     elif num == 6:[m
+         print (f"""[m
+[31m-Agente D: Esta es la lista, dime, que vamos a hacer o si vamos a interactuar con alguien (Escribe [m
+[31m-el nombre tal y como aparece en la lista, si quieres volver a la seleccion de zonas digita irse en [m
+[31m-minusculas).[m
+[32m+[m[32m    | Agente D: Ahora escucha, como parte de tu misión tienes varias opciones:[m
+[32m+[m[32m    | 1. Puedes interactuar con cualquiera de ellos digitando su nombre tal y como se muestra[m[41m  [m
+[32m+[m[32m    | 2. Puedes digitar "Irse" para volver al menú de listas[m
+[32m+[m
+ """)[m
+     [m
+     elif num == 7:[m
+[36m@@ -102,7 +105,7 @@[m [m_____________________________________________________________""")[m
+     elif num == 8:[m
+         print()[m
+         print (f"""[m
+[31m-Agente D: Vaya parece que ya llegamos bienvenido a *redoble de tambores*: """)[m
+[32m+[m[32m    | Agente D: Vaya!, hemos llegado muy rápido, bienvenido a *redoble de tambores*: """)[m
+         print()[m
+     [m
+     elif num == 9:[m
+[36m@@ -149,6 +152,12 @@[m [m________________________________________________________________________""")[m
+ `---..-------------------------------------------------------------..---[m
+ """)[m
+ [m
+[32m+[m[32m    elif num == 11.5:[m
+[32m+[m[32m        print (f"""________________________________________________________________________")[m
+[32m+[m
+[32m+[m[32m*ERROR*: Responde digitando "S" para aceptar o "N" para rechazar porfavor[m
+[32m+[m[32m________________________________________________________________________""")[m
+[32m+[m
+     if num == 12:[m
+         agente=input("Cual es tu seudonimo: ")[m
+     [m
+[36m@@ -372,9 +381,19 @@[m [m________________________________________________________________________""")[m
+     *****########********************+++++++******###**************########******########***********######*****=--------------==--+##=-    [m
+     ***##########********************++++++++***#####**************######################***********##########*=-------+**=-------+##=-    [m
+     """)[m
+[31m-    [m
+[32m+[m[32m    if num == 548:[m
+[32m+[m[32m        print ("""[m
+[32m+[m
+[32m+[m[32m░░░░░░░░░░░░░░░░░░  ░█████╗░███╗░░░███╗██╗░██████╗████████╗░█████╗░██████╗░  ░░░░░░░░░░░░░░░░░░[m
+[32m+[m[32m░░░░░░░░░░░░░░░░░░  ██╔══██╗████╗░████║██║██╔════╝╚══██╔══╝██╔══██╗██╔══██╗  ░░░░░░░░░░░░░░░░░░[m
+[32m+[m[32m█████╗█████╗█████╗  ███████║██╔████╔██║██║╚█████╗░░░░██║░░░███████║██║░░██║  █████╗█████╗█████╗[m
+[32m+[m[32m╚════╝╚════╝╚════╝  ██╔══██║██║╚██╔╝██║██║░╚═══██╗░░░██║░░░██╔══██║██║░░██║  ╚════╝╚════╝╚════╝[m
+[32m+[m[32m░░░░░░░░░░░░░░░░░░  ██║░░██║██║░╚═╝░██║██║██████╔╝░░░██║░░░██║░░██║██████╔╝  ░░░░░░░░░░░░░░░░░░[m
+[32m+[m[32m░░░░░░░░░░░░░░░░░░  ╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░  ░░░░░░░░░░░░░░░░░░[m
+[32m+[m[32m""")[m
+     """de aqui para rriba son print usados para varias partes de la simulacion"""[m
+ [m
+[32m+[m
+ def listas(num,zona,nombre):[m
+     """Funcion que almacena la mayoria de las listas de el proyecto"""[m
+ [m
+[36m@@ -400,9 +419,9 @@[m [mdef listas(num,zona,nombre):[m
+     [m
+     elif num == 5:[m
+         ran = random.randint(0,9)[m
+[31m-        materias = ["fisica", "quimica", "biologia", "matematicas", "español", "estudios sociales", "civica", "ingles","mate discreta", "Cafetales II"][m
+[32m+[m[32m        materias = ["fisica", "quimica", "biologia", "matematicas", "español", "estudios sociales", "civica", "ingles","mate discreta", "Cafetales II", "Intro de Programación con Aurelio"][m
+         return materias[ran][m
+[31m-    [m
+[32m+[m[41m     [m
+     elif num == 6:[m
+         ran = random.randint(0,6)[m
+         generos = ["el terror", "la accion", "el suspenso", "el drama", "el thriller", "animado", "la comedia"][m
+[36m@@ -429,7 +448,7 @@[m [mdef listas(num,zona,nombre):[m
+                     ,f"Yo? tengo {random.randint(10,100)} años", f"estamos en {zona}", f"Mi nombre es {nombre}", f"Mi color favorito es el {listas(1,zona,nombre)}"\[m
+                     ,f"Es el {random.randint(1,30)}/{random.randint(1,12)}/{random.randint(1500,2010)}", f"Yo naci en {zona}", "kanye west forever"\[m
+                     ,f"escucho mas que todo {listas(3,zona,nombre)}", "Aurelio por siempre, SUPREMACY", "La mejor especie del mundo, simbolo planetario!!!!", "Terreneitor goku alfredo tercero", f"{listas(4,zona,nombre)}"\[m
+[31m-                    , f"Oh! yo creo que {listas(5,zona,nombre)}", f"Sin ninguna duda {listas(6,zona,nombre)}", "OBVIOOOOOOOOOOO", "Ni yo se que responderte", "Viva la anarquia"\[m
+[32m+[m[32m                    , f"Oh! yo creo que {listas(5,zona,nombre)}", f"Sin ninguna duda {listas(6,zona,nombre)}", "OBVIOOOOOOOOOOO, QUASOOOOOO", "Ni yo se que responderte", "Viva la anarquia"\[m
+                     ,"mas vale el diablo por viejo que por diablo", f"MMM, yo creo que {listas(7,zona,nombre)}"][m
+         return respuestas[m
+ [m
+[36m@@ -476,6 +495,7 @@[m [mdef impre_personas(habitantes,largo,ind):[m
+         return impre_personas(habitantes,largo,ind+1)[m
+         """cuando el ind no es igual al largo que imprima la posicion ind de los habitantes y le sume uno para la siguiente vuelta"""[m
+ [m
+[32m+[m[32mmensajes(548,"Agende D")[m
+ agente=input("Cual es tu seudonimo: ")[m
+ """Pregunta del seudonimo para el inicio (si no lo defino afuera definirlo adentro es aburrido)"""[m
+ [m
+[36m@@ -577,14 +597,30 @@[m [mdef nombres_zonas():[m
+     return nombres_zonas[m
+     """almacena las dos listas como lista en una sola lista y lo devuelve (mas practico para la funcion de asignar nombres)"""[m
+ [m
+[31m-[m
+[32m+[m[32mdef desplegar_preguntas():[m
+[32m+[m[32m    print (f"""   | Agende D: Aquí hay una lista de preguntas que su respuesta tendrán coherencia:[m[41m [m
+[32m+[m[32m    ╔══════════════════════════════════════════════════════════════════════════════╗[m[41m                [m
+[32m+[m[32m    ║   "como estas?"   ║ "que hora es?" ║ "que edad tienes?"║ "en donde estamos?" ║[m
+[32m+[m[32m    ║ "como te llamas?" ║    "cual es tu color favorito?"    ║   "donde naciste?"  ║[m[41m [m
+[32m+[m[32m    ║   "cual es tu fecha de nacimiento?"   ║   "quien es tu cantante favorito?"   ║[m
+[32m+[m[32m    ║   "que tipo de musica escuchas?"   ║   "quien es tu programador favorito?"   ║[m
+[32m+[m[32m    ║    "te gustan los capibaras?"      ║      "Eres mas de playa o montaña?"     ║[m
+[32m+[m[32m    ║"si tubieras un capibara que nombre le pondrias?"║"cual es tu fruta favorita?"║[m
+[32m+[m[32m    ║ "cual es tu materia favortia de colegio?"  ║  "te gustan los croissants?"    ║[m
+[32m+[m[32m    ║ "cual es tu genero de peliculas favorito?" ║    "dame un consejo de via"     ║[m
+[32m+[m[32m    ║         dime algo filosofico"      ║          "ya no se que preguntarte"     ║[m
+[32m+[m[32m    ╚══════════════════════════════════════════════════════════════════════════════╝[m
+[32m+[m[32m    ║           ESCRIBE LA PREGUNTA TAL Y COMO SE MUESTRA EN PANTALLA              ║[m
+[32m+[m[32m    ╚══════════════════════════════════════════════════════════════════════════════╝[m
+[32m+[m[41m    [m
+[32m+[m[32m    """)[m
+ [m
+ def nombres_personas():[m
+     """Función que devuelve una lista con dos listas, la primer lista con los primeros nombres y la segunda con los segundos"""[m
+ [m
+     nombres = ["Doctor","Mr.","Doña","Rigoberto","Dayana",\[m
+         "Elefante","Patito","Mario","Ragnar","Windows", "Aurelio", \[m
+[31m-        "Sufrostico", "Carlos", "Santiago", "Naruto", "Fanático"\[m
+[32m+[m[32m        "Sufrostico", "Carlos", "Santiago", "Naruto", "Fanático", \[m
+         "Don Quijote", "Kirstein", "Aldo", "Benavides", "Terreneitor", \[m
+         "42", "Patata", "Spock", "Nyota", "Leonard", "Worf", "Lobo", "Jesse", \[m
+         "Juan","Marito","Wanchope","Saprissa", "Juanki","Cartaguito", "Memes", \[m
+[36m@@ -667,10 +703,10 @@[m [mdef elegir_habitantes(habitantes,seleccionados,indice,cantidad_aleatoria):[m
+ def easter_egg():[m
+     """funcion que hace una probabilidad del 1 al 100 para ver si aparece un capibara"""[m
+ [m
+[31m-    ran = random.randint(1,100)[m
+[32m+[m[32m    ran = random.randint(1,8)[m
+     """random que se usa para la probabilidad"""[m
+ [m
+[31m-    if ran == 7:[m
+[32m+[m[32m    if ran == 4:[m
+         mensajes(20,agente)[m
+         mensajes(21,agente)[m
+         """si aparece este numero justo en el ran da el easter egg"""[m
+[36m@@ -725,7 +761,7 @@[m [mdef entrar_zonas(valor,var,largo,ind,seleccion,zona,zonas):[m
+ def interaccion(valor,var,largo,ind,seleccion,zona,zonas):[m
+     """funcion que busca en la lista de habitantes el input para ver si existe"""[m
+ [m
+[31m-    if seleccion == "irse" or seleccion == "Irse":[m
+[32m+[m[32m    if seleccion == "irse" or seleccion == "Irse" or seleccion == "IRSE":[m
+         return preguntar_seleccion(valor,list(zonas),len(list(zonas)),0,[])[m
+         """condicion extra la cual si el input es irse te devuelve a la seleccion de zonas"""[m
+     [m
+[36m@@ -762,9 +798,14 @@[m [mdef acc(valor,var,nombre,zona,pregunta):[m
+ [m
+     if pregunta == "":[m
+         """si la pregunta es vacia significa que aun no le has preguntado nada por lo que te pasa al primer if que te tira el input de pregunta"""[m
+[31m-[m
+[31m-        print(f"""Agente D: Que le vas decir a {nombre}? (ten en cuenta que esta es una dimension alterna y hay respuestas que para ti no van a tener coherencia[m
+[31m-, Si quieres regresar escribe irse)""")[m
+[32m+[m[32m        desplegar_preguntas()[m
+[32m+[m[32m        print(f"""Agente D: Que le vas decir a {nombre}?[m[41m [m
+[32m+[m[32m                                        * AVISO *[m
+[32m+[m[32m    ╔════════════════════════════════════════════════════════════════════════════════╗[m[41m [m
+[32m+[m[32m    ║ Al ser una dimesión alterna, las respuestas pueden llegar a tener 0 coherencia ║[m[41m [m
+[32m+[m[32m    ╚════════════════════════════════════════════════════════════════════════════════╝[m[41m [m
+[32m+[m[32m    (DIGITA "Irse" PARA REGRESAR)[m
+[32m+[m[32m""")[m
+         pregunta = input()[m
+         """input que se usa para ver que le vas a preguntar al habitante"""[m
+ [m
+[36m@@ -853,15 +894,15 @@[m [mdef otra_pregunta(valor,var,nombre,zona,pregunta):[m
+         """cualquier otra cosa no tiene sentido en el imput por lo que tira error y te devuelve a reescribir el input"""[m
+ [m
+ [m
+[31m-def bienvenida():[m
+[31m-    """primera funcion, te da la bienvenida al juego"""[m
+[32m+[m[32mdef bienvenida(entrada):[m
+[32m+[m[32m    if entrada == 1:[m
+[32m+[m[32m        """primera funcion, te da la bienvenida al juego"""[m
+     [m
+[31m-    mensajes(0,agente)[m
+[31m-[m
+[31m-    print("Oh vaya parece que te llego un email:")[m
+[32m+[m[32m        mensajes(0,agente)[m
+ [m
+[31m-    mensajes(1,agente)[m
+[32m+[m[32m        print("Oh vaya parece que te llego un email:")[m
+ [m
+[32m+[m[32m        mensajes(1,agente)[m
+ [m
+     irse= (input("""     - ¿ACEPTAS LA MISIÓN?: - [m
+     |   (S) SI   |   (N) NO   |[m
+[36m@@ -881,6 +922,9 @@[m [mdef bienvenida():[m
+         print(mensajes(11,agente))[m
+         exit()[m
+         """Si la respuesta al input es "N" tira mensaje de finalizacion y termina la ejecucion """[m
+[32m+[m[32m    else:[m[41m [m
+[32m+[m[32m        print(mensajes(11.5,agente))[m
+[32m+[m[32m        return bienvenida(42)[m
+ [m
+[31m-bienvenida()[m
+[32m+[m[32mbienvenida(1)[m
+ """llama a la primera funcion para que empiece todo"""[m
+\ No newline at end of file[m

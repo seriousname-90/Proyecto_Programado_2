@@ -41,10 +41,10 @@ def mensajes(num,agente):
 
     if num == 2:
         print("""        
-        | Agente D: INCROYABLE! Veo que has aceptado, así que esto esta es tu misión: 
+            | Agente D: INCROYABLE! Veo que has aceptado, así que esto esta es tu misión: 
             | Necesitamos de tu ayuda para recolectar informacion de una sociedad distopica
             | llamada solarpunk. Para esto cuentas con un portal que te deberías de tener atras tuyo, ESPERA!!, 
-            | Para activarlo deberás indicarme cuantas zonas puedes cubrir hoy? 
+            | Para activarlo deberás indicarme cuantas zonas puedes cubrir hoy
             |
             |                             ███▓▒░░ IMPORTANTE ░░▒▓███ 
                 ╔═══════════════════════════════════════════════════════════════════════════════╗ 
@@ -55,9 +55,12 @@ def mensajes(num,agente):
 
     if num == 2.5:
         print("""        
-        | Agente D: "Ahora mensaje que pida los habitantes" ? 
+            | Agente D: Ahora!, tenemos un limite de capacidad con los habitantes que podrás interactuar. 
+            | Por ser la primera vez te dejaremos escojer la cantidad que creas conveniente y nosotros nos encargamos
+            | del rendimiento, no te preocupes, ahora solo dinos, 
+            | ¿Cuál va ser esa cantidad?
             |
-            |                                 ███▓▒░░ IMPORTANTE ░░▒▓███ 
+            |                                ███▓▒░░ IMPORTANTE ░░▒▓███  
                 ╔════════════════════════════════════════════════════════════════════════════════════╗ 
                 ║ Utiliza SOLAMENTE numeros enteros positivos para indicar la cantidad de habitantes ║ 
                 ╚════════════════════════════════════════════════════════════════════════════════════╝ 
@@ -72,24 +75,26 @@ ingresa un numero valido
 _____________________________________________________________""")
         print()
     
-    elif num == 4:
-        print(f"""
-
-Segundo, podrás solicitar por la cantidad de individuos que habiten las zonas:
-        
-Ingresa la cantidad individuos que deseas generar""")
-    
     elif num == 5:
-        print (f"""
-Agente D: MMM creo que ya esta, segun la cantidad que elegiste aqui estan las zonas que te asignamos,
-ya que todo esta listo, empezemos, cual zona quieres visitar de primero? (escribe el nombre tal cual
-como aparece en la lista)""")
-        
+         print (f"""
+    | Agente D: Ya está listo!, la cantidad de zonas que elegiste ya se encuentran generadas, bien hecho!.
+    | Espera...WOPS!, hubo un fallo en el sistema y los habitantes se han repartido entre todas las zonas.
+    | La única manera de saber donde quedaron es buscándolos zona por zona.  
+    | Ahora se muestran los nombres de las zonas, empezemos, ¿Cuál zona quieres visitar de primero?
+    |  
+    | 
+    |                              ███▓▒░░ IMPORTANTE ░░▒▓███  
+        ╔══════════════════════════════════════════════════════════════════════════════════╗ 
+        ║ Escribe el NOMBRE de la zona que deseas visitar TAL CUAL se muestra en la lista  ║ 
+        ╚══════════════════════════════════════════════════════════════════════════════════╝ 
+            """)
+
     elif num == 6:
         print (f"""
-Agente D: Esta es la lista, dime, que vamos a hacer o si vamos a interactuar con alguien (Escribe 
-el nombre tal y como aparece en la lista, si quieres volver a la seleccion de zonas digita irse en 
-minusculas).
+    | Agente D: Ahora escucha, como parte de tu misión tienes varias opciones:
+    | 1. Puedes interactuar con cualquiera de ellos digitando su nombre tal y como se muestra  
+    | 2. Puedes digitar "Irse" para volver al menú de listas
+
 """)
     
     elif num == 7:
@@ -102,7 +107,7 @@ _____________________________________________________________""")
     elif num == 8:
         print()
         print (f"""
-Agente D: Vaya parece que ya llegamos bienvenido a *redoble de tambores*: """)
+    | Agente D: Vaya!, hemos llegado muy rápido, bienvenido a *redoble de tambores*: """)
         print()
     
     elif num == 9:
@@ -148,6 +153,12 @@ ________________________________________________________________________""")
 :-------------------------------------------------------------------------:
 `---..-------------------------------------------------------------..---
 """)
+
+    elif num == 11.5:
+        print (f"""________________________________________________________________________")
+
+*ERROR*: Responde digitando "S" para aceptar o "N" para rechazar porfavor
+________________________________________________________________________""")
 
     if num == 12:
         agente=input("Cual es tu seudonimo: ")
@@ -372,8 +383,18 @@ ________________________________________________________________________""")
     *****########********************+++++++******###**************########******########***********######*****=--------------==--+##=-    
     ***##########********************++++++++***#####**************######################***********##########*=-------+**=-------+##=-    
     """)
-    
+    if num == 548:
+        print ("""
+
+░░░░░░░░░░░░░░░░░░  ░█████╗░███╗░░░███╗██╗░██████╗████████╗░█████╗░██████╗░  ░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░  ██╔══██╗████╗░████║██║██╔════╝╚══██╔══╝██╔══██╗██╔══██╗  ░░░░░░░░░░░░░░░░░░
+█████╗█████╗█████╗  ███████║██╔████╔██║██║╚█████╗░░░░██║░░░███████║██║░░██║  █████╗█████╗█████╗
+╚════╝╚════╝╚════╝  ██╔══██║██║╚██╔╝██║██║░╚═══██╗░░░██║░░░██╔══██║██║░░██║  ╚════╝╚════╝╚════╝
+░░░░░░░░░░░░░░░░░░  ██║░░██║██║░╚═╝░██║██║██████╔╝░░░██║░░░██║░░██║██████╔╝  ░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░  ╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░  ░░░░░░░░░░░░░░░░░░
+""")
     """de aqui para rriba son print usados para varias partes de la simulacion"""
+
 
 def listas(num,zona,nombre):
     """Funcion que almacena la mayoria de las listas de el proyecto"""
@@ -390,7 +411,7 @@ def listas(num,zona,nombre):
     
     elif num == 3:
         ran = random.randint(0,12)
-        musica = ["el pop", "el rock", "el reguetton", "el alternativ0", "el RB", "las rancheras", "la bachata", "el merengue", "el reggue", "el trap", "el rap", "el LO-FI", "la plancha" ]
+        musica = ["el pop", "el rock", "el reguetton", "el alternativ0", "el RB", "las rancheras", "la bachata", "el merengue", "el reggue", "el trap", "el rap", "el LO-FI", "la plancha", "la cumbia metalera"]
         return musica[ran]
     
     elif num == 4:
@@ -400,9 +421,9 @@ def listas(num,zona,nombre):
     
     elif num == 5:
         ran = random.randint(0,9)
-        materias = ["fisica", "quimica", "biologia", "matematicas", "español", "estudios sociales", "civica", "ingles","mate discreta", "Cafetales II"]
+        materias = ["fisica", "quimica", "biologia", "matematicas", "español", "estudios sociales", "civica", "ingles","mate discreta", "Cafetales II", "Intro de Programación con Aurelio"]
         return materias[ran]
-    
+     
     elif num == 6:
         ran = random.randint(0,6)
         generos = ["el terror", "la accion", "el suspenso", "el drama", "el thriller", "animado", "la comedia"]
@@ -429,7 +450,7 @@ def listas(num,zona,nombre):
                     ,f"Yo? tengo {random.randint(10,100)} años", f"estamos en {zona}", f"Mi nombre es {nombre}", f"Mi color favorito es el {listas(1,zona,nombre)}"\
                     ,f"Es el {random.randint(1,30)}/{random.randint(1,12)}/{random.randint(1500,2010)}", f"Yo naci en {zona}", "kanye west forever"\
                     ,f"escucho mas que todo {listas(3,zona,nombre)}", "Aurelio por siempre, SUPREMACY", "La mejor especie del mundo, simbolo planetario!!!!", "Terreneitor goku alfredo tercero", f"{listas(4,zona,nombre)}"\
-                    , f"Oh! yo creo que {listas(5,zona,nombre)}", f"Sin ninguna duda {listas(6,zona,nombre)}", "OBVIOOOOOOOOOOO", "Ni yo se que responderte", "Viva la anarquia"\
+                    , f"Oh! yo creo que {listas(5,zona,nombre)}", f"Sin ninguna duda {listas(6,zona,nombre)}", "OBVIOOOOOOOOOOO, QUASOOOOOO", "Ni yo se que responderte", "Viva la anarquia"\
                     ,"mas vale el diablo por viejo que por diablo", f"MMM, yo creo que {listas(7,zona,nombre)}"]
         return respuestas
 
@@ -476,34 +497,210 @@ def impre_personas(habitantes,largo,ind):
         return impre_personas(habitantes,largo,ind+1)
         """cuando el ind no es igual al largo que imprima la posicion ind de los habitantes y le sume uno para la siguiente vuelta"""
 
+mensajes(548,"Agende D")
 agente=input("Cual es tu seudonimo: ")
 """Pregunta del seudonimo para el inicio (si no lo defino afuera definirlo adentro es aburrido)"""
 
 def mensajes_presentacion(interactivo,zona):
     """funcion que elige un mensaje inicial de el habitante al cual le hablas"""
 
-    ran = random.randint(0,4)
+    ran = random.randint(0,38)
     """random que elige cual mensaje usar"""
 
     if ran == 0:
         print()
         print (f"{interactivo}: Hola, soy {interactivo}, ¡siempre da gusto ver nuevas personas paseando por aquí!, (ojalá se largue pronto...)")
-
+        print()
     if ran == 1:
         print()
-        print (f"{interactivo}: ¡Saludos aventurero! {interactivo} para servirle, explorador/a de ríos")
-
+        print (f"{interactivo}: ¡Saludos aventurero! {interactivo} para servirle, servido y servirá...¿sirve?")
+        print()
     if ran == 2:
         print()
-        print (f"{interactivo}: ¡Hey hola!, caluroso, ¿verdad?, si... el clima en {zona} está TERRIBLEEE")
+        print (f"{interactivo}: ¡Hey hola! ¿Caluroso, verdad? Sí, el clima en {zona} está TERRIBLEEE.")
+        print()
 
     if ran == 3:
         print()
-        print (f"{interactivo}: doscientos...trescientes...cuatros- EPA!, no lo había visto, ¿Andás perdido o algo?")
+        print (f"{interactivo}: Doscientos... trescientos... ¡EPA!, no te había visto, ¿andas perdido o algo?")
 
     if ran == 4:
         print()
         print (f"{interactivo}: ¿Te gustaría unirte a mi club secreto de unicornios invisibles?")
+        print()
+
+    if ran == 5:
+        print()
+        print (f"{interactivo}: ¡Hola! ¿Quieres ayudarme a encontrar mis gafas de sol? Se me cayeron en algún lugar por aquí.")
+        print()
+
+    if ran == 6:
+        print()
+        print (f"{interactivo}: ¡Oye tú! ¡Cuidado con mis flores! Son muy delicadas.")
+        print()
+
+    if ran == 7:
+        print()
+        print (f"{interactivo}: ¿Buscas algo en especial o solo andas curioseando?")
+        print()
+    
+    if ran == 8:
+        print()
+        print (f"{interactivo}: ¡Ah! Otro visitante más... bueno, bienvenido supongo.")
+        print()
+
+    if ran == 9:
+        print()
+        print (f"{interactivo}: ¡Hola! ¿Te has dado cuenta de cuántos pájaros hay por aquí? Es increíble.")
+
+    if ran == 10:
+        print()
+        print (f"{interactivo}: La perdí en algún lugar cerca del lago...")
+        print()
+
+    if ran == 11:
+        print()
+        print (f"{interactivo}: ¡Hola! Si buscas aventuras, ¡este es el lugar perfecto!, creo...")
+        print()
+    if ran == 12:
+        print()
+        print (f"{interactivo}: ¡Oh! No esperaba visitas hoy. ¿Quién eres?")
+        print()
+
+    if ran == 13:
+        print()
+        print (f"{interactivo}: ¡Saludos, extraño! ¿Qué te trae por aquí?")
+        print()
+    
+    if ran == 13:
+        print()
+        print (f"{interactivo}: Hola, soy {interactivo}. Me encanta esta parte de la zona verde, ¿verdad que es genial?")
+        print()
+
+    if ran == 14:
+        print()
+        print (f"{interactivo}: ¡Hola! ¡Ten cuidado por donde pisas, hay hormigueros por todas partes!")
+
+    if ran == 15:
+        print()
+        print (f"{interactivo}: ¡Hey! ¿Has visto una capibara? La he estado buscando todo el día.")
+        print()
+
+    if ran == 16:
+        print()
+        print (f"{interactivo}: ¡Hola! No hay nada como un buen paseo por la naturaleza, ¿no crees?")
+        print()
+
+    if ran == 17:
+        print()
+        print (f"{interactivo}: ¿Qué haces por aquí? No es muy común ver caras nuevas.")
+        print()
+
+    if ran == 18:
+        print()
+        print (f"{interactivo}: ¡Hey! ¿Te gustaría unirte a nuestro club de observadores de estrellas marinas?")
+        print()
+    
+    if ran == 19:
+        print()
+        print (f"{interactivo}: ¡Saludos! Estoy buscando setas especiales. ¿Me ayudarías a encontrarlas?")
+        print()
+
+    if ran == 20:
+        print()
+        print (f"{interactivo}: ¡Hola!, ¿También nuevo por aquí?, sí, sí, ando buscando la historia origen de esta zona")
+
+    if ran == 21:
+        print()
+        print (f"{interactivo}: ¡Ah! Una cara nueva. ¡Qué emoción! Bienvenido/a.")
+        print()
+
+    if ran == 22:
+        print()
+        print (f"{interactivo}: ¡Hey! ¿Necesitas ayuda para encontrar algo?, si es así dígale a alguien más")
+        print()
+
+    if ran == 23:
+        print()
+        print (f"{interactivo}: ¡Hola! Soy {interactivo}. Cuidado con los charcos, ¡resbalan mucho!")
+        print()
+
+    if ran == 24:
+        print()
+        print (f"{interactivo}: ¡Saludos! , Ahora no tengo tiempo. Necesito recolectar flores raras.")
+        print()
+    
+    if ran == 25:
+        print()
+        print (f"{interactivo}: ¡Hola! ¡Qué bueno verte! ¿Necesitas alguna orientación?")
+        print()
+
+    if ran == 26:
+        print()
+        print (f"{interactivo}: ¡Hey! ¡Qué bueno ver a alguien nuevo por aquí! ¿Quieres unirte a una caza del tesoro?")
+
+    if ran == 27:
+        print()
+        print (f"{interactivo}: Y POR ESO ESPERAAAAAAAABA CON LA CAARITA EMPAPAAAADA")
+        print()
+
+    if ran == 28:
+        print()
+        print (f"{interactivo}: ¡Hey! ¿Sabes algo sobre la leyenda de este lugar? Es fascinante.")
+        print()
+
+    if ran == 29:
+        print()
+        print (f"{interactivo}: ¡Hola! ¿Buscando animales? Este lugar está lleno de ellos, ahora mismo estoy viendo a uno fijamente...")
+        print()
+
+    if ran == 30:
+        print()
+        print (f"{interactivo}: ¡Hey! No todos los días veo una cara nueva por aquí. ¿Qué te trae por estos montes?")
+        print()
+    
+    if ran == 31:
+        print()
+        print (f"{interactivo}: ¡Hola! Ten cuidado, hay muchos usuarios de Windows en esta parte de la zona verde.")
+        print()
+
+    if ran == 32:
+        print()
+        print (f"{interactivo}: ¿Te gustaría unirte a nuestra patrulla canina de conservación del medio ambiente?")
+
+    if ran == 33:
+        print()
+        print (f"{interactivo}: ¡Hey! ¿Has visto alguna piedra peculiar por aquí? Estoy coleccionándolas.")
+        print()
+
+    if ran == 34:
+        print()
+        print (f"{interactivo}: ¡Hola! ¿Tienes tiempo para un desafío? Estoy organizando una carrera de orientación.")
+        print()
+    if ran == 35:
+        print()
+        print (f"{interactivo}: ¡Hola! Soy {interactivo}. ¿Te gustaría escuchar algunas historias locales? A mí también, ¿te sabés alguna?")
+        print()
+
+    if ran == 36:
+        print()
+        print (f"{interactivo}: PEDRO PEDRO PEDRO PEEEEE")
+        print()
+    
+    if ran == 37:
+        print()
+        print (f"{interactivo}: ¡Buenas!, desconozco que te trajo por aquí, pero no matricule bloque completo")
+        print()
+
+    if ran == 38:
+        print()
+        print (f"{interactivo}: ...")
+        print()
+
+    if ran == 39:
+        print()
+        print (f"{interactivo}: ¿NOS SACAMOS UN FORO JUNTOS?")
+        print()
         """Mensajes iniciales de los habitantes"""
 
 def asignar_nombres(num, nombres1, nombres2, lista_nombres):
@@ -534,9 +731,15 @@ def combinar_palabras(oracion):
     lista_nombres = lista con todas las combinaciones generadas
     """
 
-    sujetos = ['El perro', 'La gata', 'El niño', 'La niña', 'El árbol', 'El coche', 'Juan', 'María', 'Él', 'Ella', 'Nosotros', 'Ellos', 'Tú', 'Yo', 'Pedro',]
-    verbos = ['espabila', 'tortura', 'duerme', 'juega', 'estudia', 'baila', 'canta', 'trabaja', 'ama', 'odia', 'piensa', "EXPLOTA","apoda", "GRITA"]
-    objetos = ['la pelota', 'el libro', 'la manzana', 'el agua', 'la mesa', 'la casa', 'el sol', 'la luna', 'el mundo', 'la vida', 'el amor', 'la amistad',"el acta de despido", "el cafetal", "el estudiante de forestal"]
+    sujetos = ['El perro', 'La gata', 'El niño', 'La niña', 'El árbol', 'El coche', 'Juan', 'María', 'Él', 'Ella', 'Nosotros', 'Ellos', 'Tú', 'Yo', \
+        'Pedro',"La capibara", "El usuario de Windows", "La cucaracha", "El elefante", "el profesor", "el estudiante de compu", "Un extranjero", "El deportista", \
+        "Caramelito", "La noche", "El semestre", "La vida"]
+    verbos = ['espabila', 'tortura', 'duerme', 'juega con', 'estudia', 'baila', 'canta', 'trabaja', 'ama', 'odia', 'piensa', "EXPLOTA","apoda", "GRITA", \
+        "rapa", "le da mano épicamente a ", "sobrevive con", "programa un simulador usando", "viaja con", "speaks english with", "susurra", "devora", "se rinde con" \
+        "reprueba", "controla", "domina", "arruina", "destruye", "arregla", "resuelve", "se sienta en silencio con", "revisa el proyecto de progra"]
+    objetos = ['la pelota', 'el libro', 'la manzana', 'el agua', 'la mesa', 'la casa', 'el sol', 'la luna', 'el mundo', 'la vida', 'el amor', 'la amistad', \
+        "el acta de despido", "el cafetal", "el estudiante de forestal", "tus sentimientos", "un estudiante de la UCR", "el examen de progra", "la facultad de mate", \
+        "la banda de rock", "el Toyota Supra", "los estudiantes"]
     """listas de las partes que conforman una oracion basica (estan definidas adentro ya que esta funcion solo se usa con estas variables)"""
 
     if oracion != "":
@@ -569,7 +772,7 @@ def nombres_zonas():
         "De los Niños", "Abismal", "Colorido", "Depresivo", "Neuronal", \
         "Backroom", "Solarpunk", "Ubita", "Turrialba", "Espinoza", "Ávalos", "Naval", \
         "Paradisiaco", "Inóspito", "Green", "Alegre", "Puntos Extra", \
-        "José Figueres", "Alucinante", "Anarquico", "42", "Pascal", "Vega", "Tantalus V", "Janus V", "Ardana" \
+        "José Figueres", "Alucinante", "Anarquico", "42", "Pascal", "Vega", "Tantalus V", "Janus V", "Ardana", \
         "Capibara"]
     """lista con los segundos nombres (zonas)"""
 
@@ -577,14 +780,30 @@ def nombres_zonas():
     return nombres_zonas
     """almacena las dos listas como lista en una sola lista y lo devuelve (mas practico para la funcion de asignar nombres)"""
 
-
+def desplegar_preguntas():
+    print (f"""   | Agende D: Aquí hay una lista de preguntas que su respuesta tendrán coherencia: 
+    ╔══════════════════════════════════════════════════════════════════════════════╗                
+    ║   "como estas?"   ║ "que hora es?" ║ "que edad tienes?"║ "en donde estamos?" ║
+    ║ "como te llamas?" ║    "cual es tu color favorito?"    ║   "donde naciste?"  ║ 
+    ║   "cual es tu fecha de nacimiento?"   ║   "quien es tu cantante favorito?"   ║
+    ║   "que tipo de musica escuchas?"   ║   "quien es tu programador favorito?"   ║
+    ║    "te gustan los capibaras?"      ║      "Eres mas de playa o montaña?"     ║
+    ║"si tubieras un capibara que nombre le pondrias?"║"cual es tu fruta favorita?"║
+    ║ "cual es tu materia favortia de colegio?"  ║  "te gustan los croissants?"    ║
+    ║ "cual es tu genero de peliculas favorito?" ║    "dame un consejo de via"     ║
+    ║         dime algo filosofico"      ║          "ya no se que preguntarte"     ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝
+    ║           ESCRIBE LA PREGUNTA TAL Y COMO SE MUESTRA EN PANTALLA              ║
+    ╚══════════════════════════════════════════════════════════════════════════════╝
+    
+    """)
 
 def nombres_personas():
     """Función que devuelve una lista con dos listas, la primer lista con los primeros nombres y la segunda con los segundos"""
 
     nombres = ["Doctor","Mr.","Doña","Rigoberto","Dayana",\
         "Elefante","Patito","Mario","Ragnar","Windows", "Aurelio", \
-        "Sufrostico", "Carlos", "Santiago", "Naruto", "Fanático"\
+        "Sufrostico", "Carlos", "Santiago", "Naruto", "Fanático", \
         "Don Quijote", "Kirstein", "Aldo", "Benavides", "Terreneitor", \
         "42", "Patata", "Spock", "Nyota", "Leonard", "Worf", "Lobo", "Jesse", \
         "Juan","Marito","Wanchope","Saprissa", "Juanki","Cartaguito", "Memes", \
@@ -667,10 +886,10 @@ def elegir_habitantes(habitantes,seleccionados,indice,cantidad_aleatoria):
 def easter_egg():
     """funcion que hace una probabilidad del 1 al 100 para ver si aparece un capibara"""
 
-    ran = random.randint(1,100)
+    ran = random.randint(1,8)
     """random que se usa para la probabilidad"""
 
-    if ran == 7:
+    if ran == 4:
         mensajes(20,agente)
         mensajes(21,agente)
         """si aparece este numero justo en el ran da el easter egg"""
@@ -725,7 +944,7 @@ def entrar_zonas(valor,var,largo,ind,seleccion,zona,zonas):
 def interaccion(valor,var,largo,ind,seleccion,zona,zonas):
     """funcion que busca en la lista de habitantes el input para ver si existe"""
 
-    if seleccion == "irse" or seleccion == "Irse":
+    if seleccion == "irse" or seleccion == "Irse" or seleccion == "IRSE":
         return preguntar_seleccion(valor,list(zonas),len(list(zonas)),0,[])
         """condicion extra la cual si el input es irse te devuelve a la seleccion de zonas"""
     
@@ -762,9 +981,14 @@ def acc(valor,var,nombre,zona,pregunta):
 
     if pregunta == "":
         """si la pregunta es vacia significa que aun no le has preguntado nada por lo que te pasa al primer if que te tira el input de pregunta"""
-
-        print(f"""Agente D: Que le vas decir a {nombre}? (ten en cuenta que esta es una dimension alterna y hay respuestas que para ti no van a tener coherencia
-, Si quieres regresar escribe irse)""")
+        desplegar_preguntas()
+        print(f"""Agente D: Que le vas decir a {nombre}? 
+                                        * AVISO *
+    ╔════════════════════════════════════════════════════════════════════════════════╗ 
+    ║ Al ser una dimesión alterna, las respuestas pueden llegar a tener 0 coherencia ║ 
+    ╚════════════════════════════════════════════════════════════════════════════════╝ 
+    (DIGITA "Irse" PARA REGRESAR)
+""")
         pregunta = input()
         """input que se usa para ver que le vas a preguntar al habitante"""
 
@@ -853,15 +1077,14 @@ def otra_pregunta(valor,var,nombre,zona,pregunta):
         """cualquier otra cosa no tiene sentido en el imput por lo que tira error y te devuelve a reescribir el input"""
 
 
-def bienvenida():
-    """primera funcion, te da la bienvenida al juego"""
-    
-    mensajes(0,agente)
+def bienvenida(entrada):
+    if entrada == 1:
+        """primera funcion, te da la bienvenida al juego"""
 
-    print("Oh vaya parece que te llego un email:")
 
-    mensajes(1,agente)
+        print("Oh vaya parece que te llego un email:")
 
+        mensajes(1,agente)
 
     irse= (input("""     - ¿ACEPTAS LA MISIÓN?: - 
     |   (S) SI   |   (N) NO   |
@@ -881,6 +1104,9 @@ def bienvenida():
         print(mensajes(11,agente))
         exit()
         """Si la respuesta al input es "N" tira mensaje de finalizacion y termina la ejecucion """
+    else: 
+        print(mensajes(11.5,agente))
+        return bienvenida(42)
 
-bienvenida()
+bienvenida(1)
 """llama a la primera funcion para que empiece todo"""
